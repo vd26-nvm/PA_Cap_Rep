@@ -1,0 +1,509 @@
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    position: relative;
+}
+
+#header {
+    background-color: transparent;
+    color: #5F1A37;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.5s ease;
+  }
+
+.progress-bar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #0E79B2;
+    height: 9px;
+    transition: width 0.5s ease;
+}
+
+.progress-bar.full {
+    width: 100%;
+}
+.theProject {
+    text-decoration: none;
+    color: #4C230A;
+}
+.dropdown1 {
+    position: relative;
+    float: left;
+
+}
+.dropdown1, .abtSection {
+    font-size: 20px;
+    color: #4C230A;
+    text-decoration: none;
+
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: inherit;
+    margin: 0;
+    background-color: #F0FFCE;
+}
+nav a:hover {
+    background-color: #99767c;
+    color: white;
+}
+
+.items1 {
+    color: #5F1A37;
+}
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    border: #0d1f2d 2px solid;
+    border-radius: 10px;
+    background-color: #FDE8E9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+/*the z index idea was AI's to make sure that the display block from hover is shown over the progress bar*/
+}
+
+.dropdown-content a {
+    float: none;
+    color: rgb(68, 40, 40);
+    padding: 20px;
+    border: 2px solid #4f3c53;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: #5F1A37
+}
+
+.dropdown-content1 a:hover {
+    background-color: #D1345B;
+    
+    color: black;
+    margin: 10px;
+    margin-left: 30px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.items1 {
+    text-decoration: none;
+}
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+
+.theme-toggle {
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+.theme-toggle:hover {
+    background-color: #333;
+    border-radius: 10px;
+  }
+#contactInfo {
+    margin: auto;
+    bottom: 0;
+    margin-left: -50px;
+    margin-right: -50px;
+    margin-bottom: -50px;
+    background-color: #FAF9F6; 
+    color: #5F1A37; 
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.bottom-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+.cont1{
+    margin-right: 300px;
+    margin-left: 50px;
+}
+.constant1 {
+    margin-right: 300px;
+    margin-top: 20px;
+
+}
+.constant2 {
+    margin-top: -35px;
+    margin-right: 30px;
+}
+footer nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bottom-nav li {
+display: inline-block;
+margin-right: 20px;
+}
+
+.bottom-nav a {
+color: #5F1A37; 
+text-decoration: none;
+}
+
+.alberto-boxes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.boxAlberto {
+    width: 25%;
+    text-align: center;
+    margin: 20px;
+
+    background-color: #d8e9f7;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+}
+.boxes-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prasad-boxes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 25%;
+    text-align: center;
+    margin: 20px;
+    background-color: #d8e9f7;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+}
+.long{
+    max-width: 250px;
+    max-height: 30px;
+    margin: 20px auto;
+}
+.description {
+    font-size: 14px;
+    color: #23967F;
+    margin-bottom: 20px;
+    padding:20px;
+}
+.vidExtra {
+    text-decoration: none;
+    color: #99767c;
+}
+
+#vidhansContainer {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas: 
+        ". . . . . . . . . . . . . . . ."
+        "a a a a . n n n . . i i i i i i"
+        "a a a a . . . . . . i i i i i i"
+        "a a a a t t t t . . i i i i i i"
+        "a a a a t t t t . . i i i i i i"
+        "a a a a t t t t . . i i i i i i"
+        "a a a a t t t t . . i i i i i i"
+        ". . . . t t t t . . i i i i i i"
+        ". . . . t t t t . . . e e e e ."
+        ". . . . . . . . . . . . . . . .";
+    gap: 10px;
+    padding: 20px;
+}
+
+#prasadsContainer {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas: 
+        ". . . . . . . . . . . . . . . ."
+        "n n n . t t t t . . i i i i i i"
+        ". . . . t t t t . . i i i i i i"
+        "a a a a t t t t . . i i i i i i"
+        "a a a a t t t t . . i i i i i i"
+        "a a a a t t t t . . i i i i i i"
+        "a a a a t t t t . . i i i i i i"
+        "a a a a . . . . . . i i i i i i"
+        "a a a a . . . . . . . e e e e ."
+        ". . . . . . . . . . . . . . . .";
+    gap: 5px;
+    padding: 20px;
+}
+
+#albertosContainer {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas: 
+        ". . . . . . . . . . . . . . . ."
+        "a a a a . n n n . . i i i i i i"
+        "a a a a . . . . . . i i i i i i"
+        "a a a a t t t t . . i i i i i i"
+        "a a a a t t t t . . i i i i i i"
+        "a a a a t t t t . . i i i i i i"
+        "a a a a t t t t . . i i i i i i"
+        ". . . . t t t t . . i i i i i i"
+        ". . . . t t t t . . . e e e e ."
+        ". . . . . . . . . . . . . . . .";
+    gap: 10px;
+    padding: 20px;
+}
+
+
+.name {
+    grid-area: n;
+    background-color: #033F63;
+    font-size: 20px;
+    color: white;
+    border: 2px solid #000;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.about {
+    grid-area: a;
+    background-color: #F4E8C1;
+    border: 2px solid #000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.extra-info {
+    grid-area: e;
+    background-color: #F4E8C1;
+    border: 2px solid #000;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.twoabout {
+    grid-area: t;
+    background-color: #F4E8C1;
+    border: 2px solid #000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.img {
+    grid-area: i;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.aboutMePics {
+    max-width: 450px;
+    max-height: 320px;
+    border-radius: 20px;
+}
+
+.prasadExtraCir {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    grid-template-areas: 
+        ". n n n n n n . . . i i i i i i"
+        "a a a a a a a a . . i i i i i i"
+        "a a a a a a a a . . i i i i i i"
+        "a a a a a a a a . . i i i i i i"
+        "a a a a a a a a . . i i i i i i"
+        "a a a a a a a a . . i i i i i i"
+        "a a a a a a a a . . i i i i i i";
+    gap: 5px;
+    padding: 20px;
+}
+
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    padding-top: 20px;
+  }
+.left {
+    left: 0;
+    background-color: lavender;
+    position: fixed;
+    z-index: 1;
+  }
+.right {
+    right: 0;
+    background-color: lightblue;
+    display: flex;
+    }
+  
+.centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  
+.centered img {
+    width: 450px;
+    border-radius: 50%;
+  }
+#text { 
+    border: 2px solid #ddd;
+    border-color: white;
+    background-color: lavender;
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    width: 600px;
+    font-size: 30px;
+    height: 400px;
+    margin: auto;
+    box-shadow: 0 4px 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
+.projectContainer {
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    grid-template-areas: 
+        "pN pN pN pN pN . . vN vN vN vN vN . . aN aN aN aN aN"
+        "pN pN pN pN pN . . vN vN vN vN vN . . aN aN aN aN aN"
+        ". . . . . . . . . . . . . . . . . . ."
+        "pA pA pA pA pA . . vA vA vA vA vA . . aA aA aA aA aA"
+        "pA pA pA pA pA . . vA vA vA vA vA . . aA aA aA aA aA"
+        "pA pA pA pA pA . . vA vA vA vA vA . . aA aA aA aA aA"
+        "pA pA pA pA pA . . vA vA vA vA vA . . aA aA aA aA aA"
+        "pA pA pA pA pA . . vA vA vA vA vA . . aA aA aA aA aA"
+        "pA pA pA pA pA . . vA vA vA vA vA . . aA aA aA aA aA"
+        "pA pA pA pA pA . . vA vA vA vA vA . . aA aA aA aA aA"
+        "pA pA pA pA pA . . vA vA vA vA vA . . aA aA aA aA aA"
+        "pA pA pA pA pA . . vA vA vA vA vA . . aA aA aA aA aA";
+    gap: 5px;
+    padding: 20px;
+}
+
+.prasadName {
+    grid-area: pN;
+    color: white;
+    background-color: #28666E;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.vidhanName {
+    grid-area: vN;
+    color: white;
+    background-color: #28666E;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.albertoName {
+    grid-area: aN;
+ 
+    background-color: #28666E;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.prasadAM {
+    grid-area: pA;
+    background-color: #d8e9f7;
+  
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.vidhanAM {
+    grid-area: vA;
+    background-color: #d8e9f7;
+   
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.albertoAM {
+    grid-area: aA;
+    background-color: #d8e9f7;
+   
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    main section {
+      margin: 20px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header nav ul {
+      flex-direction: column;
+    }
+  
+    header nav ul li {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    footer nav ul {
+      flex-direction: column;
+    }
+  
+    footer nav ul li {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
